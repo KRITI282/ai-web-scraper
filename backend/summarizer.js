@@ -36,7 +36,7 @@ ${text}`;
         model,
         messages: [{ role: "user", content: prompt }],
         temperature: 0.3,
-        max_tokens: 400,
+       max_completion_tokens: 400,
       },
       {
         headers: {

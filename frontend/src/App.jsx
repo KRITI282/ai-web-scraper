@@ -18,7 +18,9 @@ export default function App() {
     setResult(null);
 
     try {
-      const response = await fetch("/api/summarize", {
+      const API_URL = import.meta.env.VITE_API_URL || "";
+
+const response = await fetch(`${API_URL}/api/summarize`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
