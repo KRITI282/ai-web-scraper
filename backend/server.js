@@ -54,3 +54,4 @@ if (isDirectRun) {
     throw err;
   });
 }
+export default app;
